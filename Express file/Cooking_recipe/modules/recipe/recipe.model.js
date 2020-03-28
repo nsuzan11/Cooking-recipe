@@ -3,11 +3,11 @@ const mongoose = require("mongoose"); //every file must include this
 const RecipeSchema = mongoose.Schema(
     {
         //define properties
-        username: { type:String },
+        name: { type:String },
         food_name: { type:String },
         cuisine: { type:String },
-        video_url: String,
-        recipe: { type:String }
+        link: String,
+        food_recipe: { type:String }
     },
     {
         collection: "recipe", //collection name

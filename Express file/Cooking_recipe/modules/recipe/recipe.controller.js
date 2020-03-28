@@ -11,7 +11,7 @@ class Recipe{
     updateById(id,payload){
         return RecipeModel.findOneAndUpdate(
             {_id:id},
-            { set:{ username:payload.username, food_name:payload.food_name, cuisine:payload.cuisine, video_url:payload.url, recipe:payload.video }}
+            { set:{ name:payload.name, food_name:payload.food_name, cuisine:payload.cuisine, link:payload.link, food_recipe:payload.food_recipe }}
             );
     }
     async getById(id){
