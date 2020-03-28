@@ -8,82 +8,59 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <style>
-    
-    div {
-      background-image: url('food.jpg');
-    }
-    
-    </style>
-  <body>
+  
+    <body>
+
 </head>
 
 <head>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">WebSiteName</a>
+        <a class="navbar-brand" href="#">FOOD RECIPE BOOK</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
       </ul>
     </div>
   </nav>
-  <!--list of all books-->
-  <div class="container">
-    <h2>Food Recipe Book</h2>
-    
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Cook</th>
-          <th>Cuisine</th>
-          <th>Link</th>
-          <th>Food_recipe</th>
-        </tr>
-      </thead>
-      <!-- <tbody>
-         <% recipeList.forEach(function(recipe){%>
-        <tr>
-          <td><%=recipe.cook%></td>
-          <td><%=recipe.cuisine%></td>
-          <td><%=recipe.link%></td>
-          <td><%=recipe.food_recipe%></td>
-          </td>
-        </tr>
-        <% }); %> 
-         <!--sir we are error in this part of the program.-->
-      </tbody> -->
-    </table>
-  </div>
+  
+  
   <!--add recipes-->
 
-  <h2 class="text-center">Social Kitchen</h2>
+  <h2 class="text-center" ><b>Social Kitchen</b></h2>
+  <div class="col-md-5"></div>
   <div class="container col-lg-3">
-    <form method="POST" action="/api/v1/recipe">
+    <form method="POST" action="record.html" class="text-center">
       <div class="form-group">
-        <label for="email">Cook's Name:</label>
-        <input type="text" class="form-control" name="cook" />
+        <label for="email"><b>Cook's Name:</b></label>
+        <input type="text" class="form-control" name="name" />
       </div>
       <div class="form-group">
-        <label for="email">Cuisine:</label>
+        <label for="email"><b>Food's Name:</b></label>
+        <input type="text" class="form-control" name="food_name" />
+      </div>
+      <div class="form-group">
+        <label for="email"><b>Cuisine:</b></label>
         <input type="text" class="form-control" name="cuisine" />
       </div>
       <div class="form-group">
-        <label for="email">Link:</label>
+        <label for="email"><b>Link:</b></label>
         <input type="text" class="form-control" name="link" />
       </div>
       <div class="form-group">
-        <label for="email">Recipe:</label>
-        <input type="text" class="form-control" name="Food_recipe" />
+        <label for="email"><b>Recipe:</b></label>
+        <input type="text" class="form-control" name="food_recipe" />
       </div>
 
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
+  
+  <INPUT TYPE=“hidden” NAME=“redirect” VALUE=“record.html”>
+    <input id=Submit type=submit value=Submit name=Submit1>
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -94,6 +71,15 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   </script>
+  <style>
+    body {
+      background-image: url('food.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style> 
+  
   </body>
 
 </html>
